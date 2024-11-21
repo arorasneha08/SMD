@@ -1,0 +1,154 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient( #333, ivory,red); /* Radial gradient from red to yellow to greyish black */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .header {
+    background-color: #ef3472;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header:hover {
+    background-color: #d82b6b; /* Darker shade on hover */
+  }
+  
+  .logo {
+    width: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo */
+  }
+  
+  h1 {
+    margin: 0;
+    font-weight: 700;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  h1:hover {
+    color: #f33131; /* Change heading color on hover */
+  }
+  
+  h2 {
+    color: #f33131;
+    font-size: 40px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  h2:hover {
+    color: #ff6a00; /* Brighten the color on hover */
+  }
+  
+  button {
+    background-color: #f33131;
+    text-align: right;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d82b6b; /* Darken the button on hover */
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-container {
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on video container */
+  }
+  
+  .short {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .short:hover {
+    background-color: #444; /* Lighter background color on hover */
+  }
+  
+  .creator {
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .creator:hover {
+    background-color: #444; /* Lighter background on hover */
+  }
+  
+  a {
+    color: #276971;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: aqua;
+  }
+  
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  section:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    background-color: #333; /* Slightly brighter section on hover */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .DROPDOWN {
+    background-color: #2d2c2c;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+  }
+  
