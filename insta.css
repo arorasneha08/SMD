@@ -1,0 +1,146 @@
+/* Base Style */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #121212;
+   color: #F8F8F8;
+ }
+ 
+ h1, h2 {
+   font-family: 'Quicksand', sans-serif;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ /* Container */
+ .container {
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+   color: #fff;
+ }
+ 
+ .header h1 {
+   color: #FF1493;
+   font-size: 2.5rem;
+ }
+ 
+ /* Logo Style */
+ .logo {
+   margin: 50px 0;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   background-color: rgba(255, 20, 147, 0.2); /* Light pink background */
+   padding: 20px;
+   border-radius: 10px;
+   transform:
+ }
+ .logo {
+   width: 120px;
+   transition: transform 0.8s ease;
+}
+
+ header:hover .logo {
+   transform: rotate(360deg);
+}
+ .logo img {
+   max-width: 80px;
+   margin-right: 15px;
+ }
+ 
+ /* Button */
+ button {
+   background-color: #FF99CC;
+   color: #fff;
+   border: none;
+   padding: 12px 30px;
+   margin: 10px 0;
+   border-radius: 8px;
+   font-size: 18px;
+   cursor: pointer;
+   transition: background-color 0.3s ease-in-out;
+ }
+ 
+ button:hover {
+   background-color: #FF4C8B;
+ }
+ 
+ /* Section Styles */
+ .trending-posts, .trending-hashtags, .trending-songs {
+   margin: 30px 0;
+   padding: 20px;
+   border: 2px solid #FF1493;
+   border-radius: 10px;
+   background-color: rgba(255, 20, 147, 0.1);
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .trending-posts:hover, .trending-hashtags:hover, .trending-songs:hover {
+   background-color: rgba(255, 20, 147, 0.2);
+   transform: scale(1.02);
+ }
+ 
+ /* Post Items */
+ .post {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   padding: 15px;
+   background-color: rgba(255, 20, 147, 0.2);
+   border-radius: 10px;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .post img {
+   max-width: 25%;
+   border-radius: 8px;
+   margin-right: 15px;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .post img:hover {
+   transform: scale(1.05);
+ }
+ 
+ .post p {
+   font-size: 1.1rem;
+   color: #FF1493;
+ }
+ 
+ /* Hashtag Styles */
+ ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
+ 
+ ul li {
+   font-size: 1.1rem;
+   margin: 10px 0;
+   color: #FF1493;
+   font-weight: 500;
+ }
+ 
+ /* Footer */
+ footer {
+   text-align: center;
+   padding: 15px;
+   background-color: #2C2F36;
+   color: #BDE638;
+   font-size: 0.9rem;
+ }
+ 
+ /* Transitions */
+ a, button {
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ a:hover, button:hover {
+   transform: translateY(-5px);
+ }
+ 
