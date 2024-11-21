@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="hm pg.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="first-text">Social Media Dashboard</h1>
+            <h3 id="DarkModetext">Dark Mode is OFF</h3>
+            <div class="mode-toggle">
+                <button onclick="darkMode()">Dark Mode</button>
+                <button onclick="lightMode()">Light Mode</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome</h2>
+            <p>Stay connected and manage your social media accounts in one place.</p>
+            <div class="card bg-dark text-white">
+                <a href="login.html"><button>Get Started</button></a>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features-list">
+                <ul>
+                    <li>Track trending hashtags</li>
+                    <li>Discover trending posts</li>
+                    <li>Analytics overview</li>
+                    <li>Manage multiple trending pages</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="girl SMD.jpeg" alt="Social Media Dashboard Image" height="400px">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Social Media Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.classList.add("dark-mode");
+            element.classList.remove("light-mode");
+            content.innerText = "Dark Mode is ON";
+        }
+
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.classList.add("light-mode");
+            element.classList.remove("dark-mode");
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+</body>
+</html>
