@@ -1,154 +1,157 @@
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient( #333, ivory,red); /* Radial gradient from red to yellow to greyish black */
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: linear-gradient(45deg, red, black, white);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* Moving gradient animation */
+@keyframes gradientMove {
+  0% {
+      background-position: 0% 50%;
   }
-  
-  .dashboard {
-    width: 80%;
-    margin: auto;
-    padding: 30px;
+  50% {
+      background-position: 100% 50%;
   }
-  
-  .header {
-    background-color: #ef3472;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: background-color 0.3s ease;
+  100% {
+      background-position: 0% 50%;
   }
-  
-  .header:hover {
-    background-color: #d82b6b; /* Darker shade on hover */
-  }
-  
-  .logo {
-    width: 50px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .logo:hover {
-    transform: scale(1.1); /* Slightly enlarge the logo */
-  }
-  
-  h1 {
-    margin: 0;
-    font-weight: 700;
-    color: #fff;
-    transition: color 0.3s ease;
-  }
-  
-  h1:hover {
-    color: #f33131; /* Change heading color on hover */
-  }
-  
-  h2 {
-    color: #f33131;
-    font-size: 40px;
-    font-weight: 700;
-    transition: color 0.3s ease;
-  }
-  
-  h2:hover {
-    color: #ff6a00; /* Brighten the color on hover */
-  }
-  
-  button {
-    background-color: #f33131;
-    text-align: right;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #d82b6b; /* Darken the button on hover */
-  }
-  
-  video {
-    width: 100%;
-    height: auto;
-  }
-  
-  .video-container {
-    max-width: 300px;
-    margin: auto;
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .video-container:hover {
-    transform: scale(1.05); /* Slight zoom effect on video container */
-  }
-  
-  .short {
-    margin: 10px 0;
-    padding: 15px;
-    background-color: #333;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .short:hover {
-    background-color: #444; /* Lighter background color on hover */
-  }
-  
-  .creator {
-    padding: 15px;
-    background-color: #333;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .creator:hover {
-    background-color: #444; /* Lighter background on hover */
-  }
-  
-  a {
-    color: #276971;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: aqua;
-  }
-  
-  section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #222;
-    border-radius: 5px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  section:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
-    background-color: #333; /* Slightly brighter section on hover */
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .DROPDOWN {
-    background-color: #2d2c2c;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    color: aliceblue;
-  }
-  
+}
+
+/* Main dashboard container */
+.dashboard {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Header */
+.header {
+  background-color: #ef3472;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header:hover {
+  background-color: #d82b6b;
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+/* Button Styles */
+button {
+  background-color: #f33131;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d82b6b;
+}
+
+/* Section Styles */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+section:hover {
+  background-color: #333;
+}
+
+h2 {
+  color: #f33131;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2:hover {
+  color: #ff6a00;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* Video Container */
+.video-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-container:hover {
+  transform: scale(1.05);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Top Creator Section */
+.creator {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.creator p {
+  margin: 10px 0;
+}
+
+/* Links */
+a {
+  color: #276971;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: aqua;
+}

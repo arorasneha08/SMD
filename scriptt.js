@@ -58,7 +58,7 @@ function validateForm() {
 function nextStep() {
     if (validateForm()) {
         saveToLocalStorage();
-        window.location.href = "profile pg.html"; // Redirect to the profile page
+        window.location.href = "index.html"; // Redirect to the profile page
     }
 }
 
