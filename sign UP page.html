@@ -8,8 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Left Side -->
-        <div class="left-side">
+        <section class="left-side">
             <div class="logo-container">
                 <img src="logo su.jpg" alt="Social Media Dashboard Logo" class="logo">
                 <p class="quote">"Connect with the world, one click at a time."</p>
@@ -17,34 +16,38 @@
             <div class="heading-container">
                 <h1>Welcome to Your Social Media Dashboard</h1>
             </div>
-            <a href="hm pg.html"><button class="btn back-btn" onclick="goBack()">Back</button></a>
-        </div>
-
-        <!-- Right Side -->
-        <div class="right-side">
+            <a href="hm pg.html">
+                <button class="btn back-btn" onclick="goBack()">Back</button>
+            </a>
+        </section>
+        
+        <section class="right-side">
             <div class="form-container">
-                <form id="signupForm">
+                <form id="signupForm" novalidate>
                     <div class="input-group">
                         <label for="username">Username</label>
-                        <input type="text" id="username" name="username" required>
+                        <input type="text" id="username" name="username" required placeholder="Enter your username" aria-label="Username">
                     </div>
+                    
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email" aria-label="Email">
                     </div>
+
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" required minlength="6" placeholder="Enter your password" aria-label="Password">
                     </div>
+
                     <div class="input-group">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" placeholder="Confirm your password" aria-label="Confirm Password">
                     </div>
-                    <a href="index.html"><button type="button" class="btn next-btn" onclick="nextStep()">Next</button></a>
 
+                    <button type="submit" class="btn next-btn">Next</button>
                 </form>
             </div>
-        </div>
+        </section>
     </div>
 
     <script src="scriptt.js"></script>
